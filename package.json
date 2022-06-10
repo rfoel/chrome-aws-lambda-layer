@@ -1,0 +1,13 @@
+{
+  "name": "chrome-aws-lambda-layer",
+  "version": "10.1.0",
+  "description": "chrome-aws-lambda published as a Lambda Layer",
+  "main": "index.js",
+  "scripts": {
+    "build": "sh scripts/build.sh",
+    "deploy": "sh scripts/deploy.sh $*"
+  },
+  "dependencies": {
+    "chrome-aws-lambda": "^10.1.0"
+  }
+}

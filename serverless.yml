@@ -1,0 +1,19 @@
+frameworkVersion: '3'
+configValidationMode: error
+
+service: chrome-aws-lambda-layer
+
+provider:
+  name: aws
+  region: us-east-1
+  runtime: nodejs14.x
+
+layers:
+  chrome-aws-lambda:
+    name: chrome-aws-lambda
+    package:
+      artifact: layer.zip
+    compatibleRuntimes:
+      - nodejs14.x
+    compatibleArchitectures:
+      - x86_64
